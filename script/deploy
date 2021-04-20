@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh wgomeztest@45.55.48.116 <<EOF
+ cd ~/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
